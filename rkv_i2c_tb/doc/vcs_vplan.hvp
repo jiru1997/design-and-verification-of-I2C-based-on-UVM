@@ -1,0 +1,101 @@
+
+plan block_rkv_i2c;
+
+
+    feature registers;
+        feature hardware_reset_value;
+            measure Line, Cond, FSM, Toggle, Branch, Assert, Assert.assert, Assert.cover, Assert.ast_count, Assert.cov_count, Group, Group.count, Group.grp_count, Group.cvp_count, Group.bin_count, SnpsAvg, test, test.completion, AssertResult Measure_1;
+                source = "tree: New_source_1";
+            endmeasure
+        endfeature
+        feature bit_bash;
+            measure Line, Cond, FSM, Toggle, Branch, Assert, Assert.assert, Assert.cover, Assert.ast_count, Assert.cov_count, Group, Group.count, Group.grp_count, Group.cvp_count, Group.bin_count, SnpsAvg, test, test.completion, AssertResult Measure_1;
+                source = "tree: New_source_1";
+            endmeasure
+        endfeature
+        feature register_access;
+            measure Line, Cond, FSM, Toggle, Branch, Assert, Assert.assert, Assert.cover, Assert.ast_count, Assert.cov_count, Group, Group.count, Group.grp_count, Group.cvp_count, Group.bin_count, SnpsAvg, test, test.completion, AssertResult Measure_1;
+                source = "tree: New_source_1";
+            endmeasure
+        endfeature
+    endfeature
+    feature i2c_protocol;
+        feature target_and_slave_address;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::target_address_and_slave_address_cg";
+            endmeasure
+        endfeature
+        feature speed_modes;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::speed_modes_cg";
+            endmeasure
+        endfeature
+        feature seven_or_ten_bits_addressing;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::bits7_or_bits10_addressing_cg";
+            endmeasure
+        endfeature
+        feature restart_condition;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::restart_condition_cg";
+            endmeasure
+        endfeature
+    endfeature
+    feature status;
+        feature activity;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::activity_cg";
+            endmeasure
+        endfeature
+        feature enabled;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::enabled_cg";
+            endmeasure
+        endfeature
+    endfeature
+    feature data_buffer;
+        feature tx_fifo_status;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::tx_fifo_status_cg";
+            endmeasure
+        endfeature
+        feature rx_fifo_status;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::rx_fifo_status_cg";
+            endmeasure
+        endfeature
+    endfeature
+    feature interrupt;
+        feature status_register;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::interrupt_status_cg";
+            endmeasure
+        endfeature
+        feature clear_register;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::interrupt_clear_cg";
+            endmeasure
+        endfeature
+        feature hardware_signals;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::interrupt_hardware_outputs_cg";
+            endmeasure
+        endfeature
+        feature tx_abort_source;
+            measure Group Measure_1;
+                source = "group: rkv_i2c_pkg::rkv_i2c_cgm::interrupt_tx_abort_sources_cg";
+            endmeasure
+        endfeature
+    endfeature
+    feature SDA_control;
+        measure Group Measure_1;
+            source = "group: rkv_i2c_pkg::rkv_i2c_cgm::sda_control_cg";
+        endmeasure
+    endfeature
+    feature timeout_counter;
+        measure Group Measure_1;
+            source = "group: rkv_i2c_pkg::rkv_i2c_cgm::timeout_counter_cg";
+        endmeasure
+    endfeature
+endplan
+

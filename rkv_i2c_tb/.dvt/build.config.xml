@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<build-config version="2">
+    <current-build-name/>
+    <design-hierarchy-top language=""/>
+    <verification-hierarchy-top language="VLOG">ro.amiq.vlogdt.VlogNature work ro.amiq.vlogdt.model.reflection.RfLibrary rkv_i2c_pkg ro.amiq.vlogdt.model.reflection.RfPackage rkv_i2c_master_abrt_10b_rd_norstrt_virt_seq ro.amiq.vlogdt.model.reflection.RfClass</verification-hierarchy-top>
+</build-config>

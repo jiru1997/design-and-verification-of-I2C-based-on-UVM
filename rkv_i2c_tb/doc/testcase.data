@@ -1,0 +1,6 @@
+HVP metric = test_status
+rkv_i2c_quick_reg_access_test                                 = PASSED
+rkv_i2c_master_directed_write_packet_test                     = PASSED
+rkv_i2c_master_directed_read_packet_test                      = PASSED
+rkv_i2c_master_directed_interrupt_test                        = PASSED
+
